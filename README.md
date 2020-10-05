@@ -15,8 +15,7 @@ npm install
 ```
 ## Running application
 
-- git checkout **caesarCipher**
-- cd **caesarCipher**
+- cd **src**
 - running application:
 > ### Required running options:
 > - **-s**, **--shift** : a shift 

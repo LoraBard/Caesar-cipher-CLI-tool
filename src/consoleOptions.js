@@ -15,12 +15,7 @@ function setConsoleOptions() {
 function getConsoleArguments() {
   setConsoleOptions();
   const consoleArgs = program.opts();
-  const result = validateConsoleArguments(consoleArgs);
-  console.log('RESULT', result);
-  if (!result) {
-    consoleArgs.output = '';
-  }
-  console.log('ONE', consoleArgs);
+  validateConsoleArguments(consoleArgs);
   return consoleArgs;
 }
 

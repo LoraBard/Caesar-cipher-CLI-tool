@@ -12,7 +12,7 @@ function checkFileExists(path) {
   path &&
     fs.stat(path, (err, stats) => {
       if (err || stats.isDirectory()) {
-        showError(ERROR_TYPES.file, ERROR_CODES.file);
+        showError(`${ERROR_TYPES.file} ${path}`, ERROR_CODES.file);
       }
     });
 }
